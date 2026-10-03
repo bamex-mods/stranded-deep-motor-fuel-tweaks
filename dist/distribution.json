@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "motor-fuel-tweaks",
+  "name": "Stranded Deep Motor Fuel Tweaks",
+  "version": "0.2.1",
+  "artifactBaseName": "StrandedDeepMotorFuelTweaks",
+  "type": "mod",
+  "category": "gameplay",
+  "description": "Adjustable Boat Motor fuel consumption from 0% to 100%, with optional in-game Mod Settings integration.",
+  "packagePaths": [
+    "BepInEx/plugins/StrandedDeepMotorFuelTweaks"
+  ],
+  "ownedPaths": [
+    "BepInEx/plugins/StrandedDeepMotorFuelTweaks"
+  ],
+  "install": {
+    "restartRequired": true
+  },
+  "dependencies": [
+    {
+      "id": "bepinex",
+      "required": true
+    }
+  ],
+  "optionalDependencies": [
+    {
+      "id": "mod-settings",
+      "minimumVersion": "0.2.0"
+    }
+  ],
+  "conflicts": [],
+  "persistence": {
+    "usesBepInExConfig": true,
+    "usesGameSave": false,
+    "usesSidecarData": false,
+    "backupBeforeUpdate": false
+  },
+  "publishing": {
+    "repository": "stranded-deep-motor-fuel-tweaks",
+    "tag": "v0.2.1",
+    "releaseChannel": "stable"
+  },
+  "bepInExGuid": "com.bamex.strandeddeep.motorfueltweaks"
+}

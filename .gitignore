@@ -1,0 +1,26 @@
+# Generated release output
+dist/out/
+
+# Compiler/build output
+build/
+bin/
+obj/
+*.dll
+*.pdb
+
+# Temporary/editor files
+*.tmp
+*.bak
+*.user
+*.suo
+
+# Runtime/user data
+BepInEx/
+config/
+logs/
+LogOutput.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vs/

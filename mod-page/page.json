@@ -1,0 +1,29 @@
+{
+    "schemaVersion":  1,
+    "id":  "motor-fuel-tweaks",
+    "defaultLocale":  "en",
+    "locales":  {
+                    "en":  "en.json",
+                    "ru":  "ru.json"
+                },
+    "media":  {
+                  "icon":  "media/icon.png",
+                  "screenshots":  [
+
+                                  ],
+                  "cover":  "media/cover.jpg"
+              },
+    "tags":  [
+                 "fuel",
+                 "vehicles",
+                 "settings",
+                 "boat_motor",
+                 "split_screen",
+                 "quality_of_life"
+             ],
+    "highlights":  [
+                       "fuel",
+                       "vehicles",
+                       "settings"
+                   ]
+}

@@ -1,0 +1,51 @@
+{
+    "schemaVersion":  1,
+    "locale":  "en",
+    "subtitle":  "Adjust Boat Motor fuel consumption from vanilla drain down to zero.",
+    "description":  "Makes Boat Motor fuel use configurable from 0% to 100% of vanilla consumption. The default is 50%, with live in-game control through optional Mod Settings and a normal BepInEx config fallback.",
+    "features":  [
+                     "Fuel consumption can be adjusted from 0% to 100% of vanilla.",
+                     "The setting changes in 5% steps.",
+                     "The default value is 50% of vanilla Boat Motor fuel consumption.",
+                     "100% keeps vanilla fuel consumption.",
+                     "50% uses roughly half the vanilla fuel.",
+                     "25% uses roughly one quarter of the vanilla fuel.",
+                     "0% prevents Boat Motor fuel from being consumed while the motor is running.",
+                     "Optional Stranded Deep Mod Settings integration provides an in-game slider.",
+                     "The setting remains available through the BepInEx config when Mod Settings is absent.",
+                     "The multiplier applies to live Boat Motors globally, including local split-screen sessions.",
+                     "The mod does not store data in the Stranded Deep save file."
+                 ],
+    "screenshotCaptions":  {
+
+                           },
+    "faq":  [
+                {
+                    "question":  "Does 0% mean unlimited Boat Motor fuel?",
+                    "answer":  "Yes. At 0% the mod refunds the normal Boat Motor fuel drain, so the motor does not consume fuel while running."
+                },
+                {
+                    "question":  "Does the mod change fuel cans or the fuel still?",
+                    "answer":  "No. It only adjusts fuel consumption by the Boat Motor."
+                },
+                {
+                    "question":  "Does it work in local split-screen?",
+                    "answer":  "Yes. The setting is global to the game session, so both local players use the same Boat Motor fuel multiplier."
+                },
+                {
+                    "question":  "Is Mod Settings required?",
+                    "answer":  "No. It is a soft dependency. Without Mod Settings the same value is read from the BepInEx configuration file."
+                },
+                {
+                    "question":  "Can the value be changed without restarting the game?",
+                    "answer":  "The Mod Settings slider updates the BepInEx ConfigEntry live. Installing, updating or removing the plugin itself still requires a game restart."
+                },
+                {
+                    "question":  "Does the mod modify my save?",
+                    "answer":  "No. It uses BepInEx configuration and does not write its own state into the Stranded Deep save."
+                }
+            ],
+    "changelog":  [
+
+                  ]
+}
