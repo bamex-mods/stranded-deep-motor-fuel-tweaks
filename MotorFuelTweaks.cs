@@ -14,7 +14,7 @@ namespace StrandedDeepMotorFuelTweaks
     {
         public const string PluginGuid = "com.bamex.strandeddeep.motorfueltweaks";
         public const string PluginName = "Stranded Deep Motor Fuel Tweaks";
-        public const string PluginVersion = "0.2.1";
+        public const string PluginVersion = "0.2.2";
 
         private const float DefaultConsumptionMultiplier = 0.50f;
         private const float MinimumConsumptionMultiplier = 0.00f;
@@ -105,9 +105,10 @@ namespace StrandedDeepMotorFuelTweaks
 
         private void RegisterModSettings()
         {
-            bool registered = ModSettingsClient.RegisterMod(
+            bool registered = ModSettingsClient.RegisterModLocalized(
                 ModSettingsModId,
                 "\u041C\u041E\u0422\u041E\u0420",
+                "MOTOR",
                 600);
 
             if (!registered)
@@ -116,15 +117,17 @@ namespace StrandedDeepMotorFuelTweaks
                 return;
             }
 
-            bool sliderRegistered = ModSettingsClient.AddSlider(
+            bool sliderRegistered = ModSettingsClient.AddSliderLocalized(
                 ModSettingsModId,
                 "fuel-consumption",
                 "\u0420\u0430\u0441\u0445\u043E\u0434 \u0442\u043E\u043F\u043B\u0438\u0432\u0430",
+                "Fuel Consumption",
                 100,
                 MinimumConsumptionMultiplier,
                 1.0f,
                 0.05f,
                 100.0f,
+                "%",
                 "%",
                 0,
                 GetMenuConsumptionMultiplier,

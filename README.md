@@ -2,6 +2,13 @@
 
 A lightweight BepInEx mod for Stranded Deep that changes Boat Motor fuel consumption.
 
+## 0.2.2 Mod Settings localization
+
+- Added Russian/English localization for the Motor Fuel Consumption slider.
+- Synced the vendored reflection bridge with the authoritative bilingual SDK.
+- Fuel mechanics, ConfigEntry ownership and global split-screen behavior are unchanged.
+- Russian/English Mod Settings and motor fuel behavior were field-tested before publication.
+
 ## Features
 
 - Adjustable Boat Motor fuel consumption from 0% to 100%.
@@ -53,4 +60,4 @@ Restart the game after installing, updating or removing the mod.
 
 ## Version
 
-Current release candidate source: `0.2.1`.
+Current stable version: `0.2.2`.
